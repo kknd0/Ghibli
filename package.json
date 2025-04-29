@@ -1,0 +1,17 @@
+{
+  "name": "newsrv",
+  "type": "module",
+  "scripts": {
+    "dev": "infisical run --env=dev --path=/apsuDev --projectId=15b14eb5-90b8-4b62-9629-6571d875bff6 --bun run --hot src/index.ts",
+    "go": "infisical run --env=dev --path=/apsuDev --projectId=15b14eb5-90b8-4b62-9629-6571d875bff6 -- bun run src/go.ts",
+    "go2": "infisical run --env=dev --path=/apsuDev --projectId=15b14eb5-90b8-4b62-9629-6571d875bff6 -- bun run src/go2.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.1",
+    "hono": "^4.7.8",
+    "openai": "^4.96.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
