@@ -21,7 +21,7 @@ const requestData = {
         },
         {
           type: 'text',
-          text: 'Make this Ghibli style',
+          text: 'Make this Ghibli style with a sunglass',
         },
       ],
     },
