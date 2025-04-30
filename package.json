@@ -8,8 +8,10 @@
     "go3": "infisical run --env=dev --path=/apsuDev --projectId=15b14eb5-90b8-4b62-9629-6571d875bff6 -- bun run src/go3.ts"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.799.0",
     "@hono/node-server": "^1.14.1",
     "axios": "^1.9.0",
+    "better-upload": "^0.2.5",
     "hono": "^4.7.8",
     "openai": "^4.96.2"
   },

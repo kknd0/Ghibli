@@ -1,7 +1,6 @@
 import axios from 'axios'
 import * as fs from 'fs'
 import * as path from 'path'
-import { Readable } from 'stream'
 
 const apiKey = process.env.PIAPI_API_KEY
 
@@ -16,7 +15,7 @@ const requestData = {
         {
           type: 'image_url',
           image_url: {
-            url: 'https://images.ctfassets.net/kftzwdyauwt9/21orfxKx8HXXGKH8cTOq60/1eb34535ddce9c9e91fab0fad77bc158/minnias_cat_input.png?w=640&q=90&fm=webp',
+            url: 'https://cf.apsubuy.com/IMG.jpeg',
           },
         },
         {
