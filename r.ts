@@ -6,10 +6,11 @@ const url =
 
 const response = await fetch(url)
 const fileBuffer = await response.arrayBuffer()
+const name = '3.png'
 
 const command = new PutObjectCommand({
   Bucket: 'apsu',
-  Key: '1.png',
+  Key: name,
   Body: new Uint8Array(fileBuffer),
   ContentType: 'image/png',
 })
@@ -17,4 +18,3 @@ const command = new PutObjectCommand({
 const result = await r2client.send(command)
 
 console.log(result)
-const url1 = `https://cdn.snap2sticker.com/1.png`
