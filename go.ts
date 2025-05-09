@@ -2,6 +2,8 @@ import axios from 'axios'
 import * as fs from 'fs'
 import * as path from 'path'
 
+const prompt = `Create a 3D anime-style illustration on a 10:16 canvas featuring nine chibi-style stickers of this person in various gym workout poses, and expressions.
+Each stickers haa a white border, bold outline and includes a speech bubble with phrases like "ok!", "ehek", "thank you", "eh??". Set in a soft pastel yellow background for a fun positive vibes, perfect for WhatsApp use.`
 const apiKey = process.env.PIAPI_API_KEY
 
 const outputPath = path.resolve(__dirname, 'output.jpg') // 最终图像保存路径
@@ -15,12 +17,12 @@ const requestData = {
         {
           type: 'image_url',
           image_url: {
-            url: 'https://cf.apsubuy.com/IMG.jpeg',
+            url: 'https://cdn.snap2sticker.com/IMG.jpeg',
           },
         },
         {
           type: 'text',
-          text: 'Make this Ghibli style with a sunglass',
+          text: prompt,
         },
       ],
     },
